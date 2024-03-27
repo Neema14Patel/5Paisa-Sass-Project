@@ -1,0 +1,18 @@
+@import '../partials/media-queries';
+
+.videoEmbed{
+    text-align: center;
+    padding-bottom: 5.3125rem;
+    @include mobile-view{
+        margin-top: 3.125rem;
+        display: flex;
+    }
+    .videoComponent{
+        @include mobile-view{
+            width: auto;
+            margin: auto;
+        }
+    }
+   
+    
+}

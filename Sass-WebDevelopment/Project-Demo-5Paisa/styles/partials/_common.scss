@@ -1,0 +1,73 @@
+
+.container-fluid{
+    .margin-top-btm{
+        margin-top: 8.125rem;
+        margin-bottom: 5.125rem;
+        @include mobile-view{
+            margin-top: 3.125rem;
+        }
+    }
+
+}
+body{
+    overflow-x: hidden;
+    @include mobile-view{
+        overflow-x: hidden !important;
+    }
+}
+.btn-bg-white-smoke{
+    background-color: $white-smoke;
+    border: $white-smoke ;
+}
+
+.btn-primary-red{
+    background-color:$button-bg-red;
+    border: $button-bg-red;
+}
+.borderRight{
+    border-right-style: dashed;
+    color: #acacac;
+    @include mobile-view{
+        color: #f1f1f1;
+    }
+  
+}
+.borderBottom{
+    @include mobile-view{
+        border-bottom-style: dashed;
+        color: #acacac;
+    }
+}
+.greyIcon{
+    color: $dark-grey;
+    font-size: 1.25rem;
+}
+.rupessIcon{
+    color: $global-color-black;
+    font-size: xxx-large;
+}
+.hiddenDesktop{
+    display: none;
+    @include mobile-view{
+        display: inline-block;
+        width: -webkit-fill-available;
+    }
+}
+.bgContainerblack{
+            background-color: $global-color-black;
+}
+.bgMobilewhite{
+    @include mobile-view{
+        background-color: $global-color-white;
+    }
+}
+.hiddenMobile{
+    @include mobile-view{
+        display: none;
+    }
+}
+.container-fluid{
+    @include mobile-view{
+        overflow-x: hidden;
+    }
+}

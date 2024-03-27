@@ -1,0 +1,65 @@
+@import '../partials/media-queries';
+
+.container-fluid {
+    padding: 0px;
+    .primaryHeader {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem 1.5625rem;
+        @include mobile-view{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 1rem 1.5625rem;
+            border-bottom: 1px solid #c1c1c1;
+        }
+        >.container-fluid{
+            ul {
+                position: relative;
+                .companylogo {
+                    position: absolute;
+                    top: -10px;
+                    @include mobile-view{
+                        position: unset;
+                    }
+                    img {
+                        width: 6rem;
+                        @include mobile-view{
+                            width: 7rem;
+                        }
+                    }
+                }
+                li{
+                    a{
+                        color: $color-grey;
+                    }
+                }
+                .marginLeft{
+                    margin-left: 9.375rem;
+                    @include mobile-view{
+                        margin-left: 0rem;
+                    }
+                }
+            }
+            ul{
+                li{
+                    a:active:visited:hover{
+                        color: $global-color-red;
+                    }
+                }
+               
+            }
+            .navbar-toggler{
+                background-color: $global-color-red;
+            }
+          
+        }
+        .menuFloatRight {
+            margin-right: 0rem !important;
+            .d-flex{
+                .searchIcon{
+                    position: relative;
+                    left: -35px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
